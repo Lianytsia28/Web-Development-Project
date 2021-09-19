@@ -842,4 +842,7 @@ footer{
         width: 100px;
         margin: 12px auto;
     }
+    .contact_form-copy{
+        width: 100%;
+    }
 }
