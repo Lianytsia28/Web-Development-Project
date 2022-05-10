@@ -24,6 +24,8 @@ header{
     font-weight: 800;
     float: left;
     cursor: pointer;
+    /* top: 0%; */
+    transform: translate(0, 70%);
 }
 .logo_color{
     color: #212121;
@@ -255,7 +257,7 @@ nav ul li {
     line-height: 22px;
     cursor: pointer;
     border-radius: 5px;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    /* transition: color 1s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; */
     box-shadow: 2px 1px 2px 1px rgb(36, 36, 36);
 }
 .services_block-flex-x:hover > .services_button{
@@ -264,18 +266,22 @@ nav ul li {
     color: #ffffff;
     box-shadow: none;
     border: solid 2px #ffffff;
+    /* transition: 1s; */
 }
 .services_block-flex-x:hover .about_block-txt{
     color: #ffffff;
     cursor: pointer;
+    transition: 0.5s;
 }
 .services_block-flex-x:hover .about_txt-min{
     color: #ffffff;
     cursor: pointer;
+    transition: 0.5s;
 }
 .services_block-flex-x:hover{
     background-color: #00897b;
     cursor: pointer;
+    transition: 1s;
 }
 .portfolio{
     position: relative;
@@ -310,12 +316,14 @@ nav ul li {
 
 .tabs>input[type="radio"] {
   display: none;
+  transition: 1s;
 }
 
 .tabs>input[type="radio"]:checked+label {
   color: #ffffff;
   background: #00897b;
   justify-content: center;
+  transition: 1s;
 }
 
 .tabs>div {
@@ -323,6 +331,7 @@ nav ul li {
   display: none;
   /* padding: 10px 15px; */
   border-radius: 4px;
+  transition: 1s;
 }
 
 /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
@@ -350,7 +359,7 @@ nav ul li {
   font-size: 20px;
   line-height: 1.5;
   border-radius: 4px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 2s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   margin-left: 12px;
   cursor: pointer;
   margin-bottom: 10px;
@@ -358,6 +367,7 @@ nav ul li {
 
 .tabs>label:first-of-type {
   margin-left: 0;
+  transition: 2s;
 }
 .portfolio_block-flex{
     display: flex;
@@ -436,7 +446,8 @@ img{
     cursor: pointer;
     line-height: 1.5;
     border-radius: 4px;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    transition: 1s;
+    /* transition: color 0.1s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; */
 }
 .portfolio_button:hover{
     background: #ffffff;
@@ -529,6 +540,7 @@ img{
 .button_margin{
     margin: 36px 0 56px 0;
     box-shadow: none;
+    transition: 1s;
 }
 .services_button:hover{
     background: #00897b;
@@ -587,9 +599,13 @@ img{
     background-color: #f0f1f1;
     padding: 6px;
     border-radius: 9px;
-    color: #00897b;   
+    transition: 1s;
+    cursor: pointer;
+    /* color: #00897b;    */
 }
-
+.team_icons-x:hover{
+    background: #00897b;
+}
 .blog{
     position: relative;
     width: 100%;
@@ -737,6 +753,9 @@ img{
     color: #212121;
     font-size: 20px;
 }
+.contact_form input:focus{
+    background:#e7e7e7b4;
+}
 .contact_form-copy-v{
     width: 96.5%;
     margin: 12px;
@@ -752,10 +771,11 @@ img{
     font-size: 20px;
     cursor: pointer;
     font-weight: 600;
+    background: #ffffff27;
     color: #212121;
     border-radius: 5px;
     border: solid 3px #ffffff;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    transition: 1s;
 }
 .contact_button:hover{
     color: #ffffff;

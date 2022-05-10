@@ -11,19 +11,19 @@
     <header>
         <nav class="top-menu">
             <div class="general_container">
-                <p href="#home" class="logo">Your <span class="logo_color">Logo</span></p>
+                <a href="#home" class="logo">Your <span class="logo_color">Logo</span></a>
                 <div href="#" class="open-close-menu">
                     <div class="strip"></div>
                     <div class="strip"></div>
                     <div class="strip"></div>
                 </div>
                 <ul class="fancyNav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#servicing">Servicing</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#home" id="i1">Home</a></li>
+                    <li><a href="#about" id="i2">About</a></li>
+                    <li><a href="#servicing" id="i3">Servicing</a></li>
+                    <li><a href="#portfolio" id="i4">Portfolio</a></li>
+                    <li><a href="#blog" id="i5">Blog</a></li>
+                    <li><a href="#contact" id="i6">Contact Us</a></li>
                 </ul>
             </div>
     </nav>
@@ -252,7 +252,7 @@
                     </div>
                 </div>
             </div>
-            <button class="portfolio_button">VIEW ALL</button>
+            <!-- <button class="portfolio_button">VIEW ALL</button> -->
             </div>
             </section>
             <section class="pricing">
@@ -469,6 +469,64 @@
                 });
             }
         });
+    </script>
+    <script>
+        var text = document.querySelector('#i1');
+
+        i1.onclick = function(){
+            i1.style.color = '#00897b';
+            i2.style.color = '#212121';
+            i3.style.color = '#212121';
+            i4.style.color = '#212121';
+            i5.style.color = '#212121';
+            i6.style.color = '#212121';
+            i7.style.color = '#212121';
+        }
+        i2.onclick = function(){
+            i2.style.color = '#00897b';
+            i1.style.color = '#212121';
+            i3.style.color = '#212121';
+            i4.style.color = '#212121';
+            i5.style.color = '#212121';
+            i6.style.color = '#212121';
+            i7.style.color = '#212121';
+        }
+        i3.onclick = function(){
+            i3.style.color = '#00897b';
+            i1.style.color = '#212121';
+            i2.style.color = '#212121';
+            i4.style.color = '#212121';
+            i5.style.color = '#212121';
+            i6.style.color = '#212121';
+            i7.style.color = '#212121';
+        }
+        i4.onclick = function(){
+            i4.style.color = '#00897b';
+            i1.style.color = '#212121';
+            i2.style.color = '#212121';
+            i3.style.color = '#212121';
+            i5.style.color = '#212121';
+            i6.style.color = '#212121';
+            i7.style.color = '#212121';
+        }
+        i5.onclick = function(){
+            i5.style.color = '#00897b';
+            i1.style.color = '#212121';
+            i3.style.color = '#212121';
+            i4.style.color = '#212121';
+            i2.style.color = '#212121';
+            i6.style.color = '#212121';
+            i7.style.color = '#212121';
+        }
+        i6.onclick = function(){
+            i6.style.color = '#00897b';
+            i1.style.color = '#212121';
+            i3.style.color = '#212121';
+            i4.style.color = '#212121';
+            i5.style.color = '#212121';
+            i2.style.color = '#212121';
+            i7.style.color = '#212121';
+        }
     </script>
 </body>
 </html> 
